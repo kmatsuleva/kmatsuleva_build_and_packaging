@@ -1,0 +1,198 @@
+$primaryColorOfText: white;
+$orange: #ff7104;
+$padding-left: 100px;
+$fontWeight: 400;
+@font-face {
+    font-family: 'Arimo';
+    src: url('./Arimo-Regular.ttf') format('ttf');
+}
+
+body,
+html {
+    height: 100%;
+    margin: 0;
+}
+
+ul {
+    position: absolute;
+    top: 0;
+    right: 0;
+    list-style-type: none;
+    margin: 0;
+    padding-left: $padding-left - $padding-left;
+    height: 50px;
+    margin-top: 10px;
+    li {
+        display: inline-block;
+    }
+}
+
+a {
+    font-family: 'Arimo';
+    text-decoration: none;
+    color: $primaryColorOfText;
+    padding: 0px 15px;
+    line-height: 50px;
+    display: block;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.bg {
+    background-image: url("./background.jpg");
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+}
+
+.caption {
+    background-image: url("./welcome.png");
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 30%;
+    width: 55%;
+    height: 120px;
+    left: 45%;
+    border-top-width: 80px;
+    padding-top: 10px;
+    margin: 0 auto;
+    z-index: 2;
+}
+
+.after-bg {
+    text-align: center;
+    margin-top: 80px;
+    margin-bottom: 15px;
+    h2 {
+        color: $orange;
+        font-family: 'Arimo';
+        font-size: 35px;
+        font-weight: 400;
+        font-style: normal;
+    }
+    hr {
+        border-color: $orange;
+        width: 60px;
+    }
+    p {
+        margin: auto auto;
+        font-family: 'Arimo';
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.5;
+        color: #333333;
+        width: 600px;
+        padding-top: 5px;
+    }
+}
+
+.gallery {
+    margin-top: 80px;
+    padding: 0;
+    white-space: nowrap;
+    width: 100%;
+    img {
+        height: 290px;
+        width: 32.8%;
+    }
+    &>img {
+        padding-left: $padding-left / 20;
+    }
+}
+
+.about-tarnovo {
+    margin: auto auto;
+    padding-left: 98px;
+    padding-right: 90px;
+    padding-top: 70px;
+    width: 85%;
+    h3 {
+        font-family: 'Arimo';
+        font-weight: 400;
+        font-size: 30px;
+        color: $orange;
+        font-style: normal;
+        text-align: center;
+    }
+    p {
+        font-family: 'Arimo';
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        line-height: 1.5;
+        color: #333333;
+        text-align: justify;
+    }
+    hr {
+        border-color: $orange;
+        width: 60px;
+    }
+}
+
+.right-img img {
+    height: 292px;
+    margin-left: 100px;
+}
+
+.about-tarnovo,
+.right-img {
+    display: inline-block;
+}
+
+footer {
+    text-align: left;
+    margin-top: 100px;
+    h3 {
+        font-family: 'Arimo';
+        font-style: normal;
+        color: $orange;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 400;
+        padding-bottom: 20px;
+        margin-bottom: 26px;
+        border-bottom: 1px solid $orange;
+    }
+}
+
+.about-us {
+    width: 27%;
+    padding-left: $padding-left / 5;
+    padding-right: 15px;
+    text-align: left;
+    margin-left: 100px;
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        color: #333333;
+    }
+}
+
+.contact-info {
+    width: 24%;
+    text-align: left;
+    padding-left: $padding-left - 85;
+    margin-left: 30px;
+    p {
+        font-size: 16px;
+        font-weight: 400;
+        font-style: normal;
+        color: #333333;
+    }
+}
+
+.find-us {
+    @extend .contact-info;
+}
+
+.about-us,
+.contact-info {
+    display: inline-block;
+    vertical-align: top;
+}
